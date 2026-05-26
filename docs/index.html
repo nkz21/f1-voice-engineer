@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <title>F1 Voice Engineer</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Assistant vocal IA pour F1 25 - push-to-talk sur volant Moza, reconnaissance vocale offline, LLM et TTS." />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <header>
+    <div class="logo">
+      <span class="logo-icon">🏎️</span>
+      <h1>F1 Voice <span>Engineer</span></h1>
+    </div>
+    <span class="header-badge">Beta</span>
+  </header>
+
+  <section class="hero">
+    <div class="hero-tag">Open Source &mdash; Offline AI &mdash; Python 3.10+</div>
+    <h2>Ton ingénieur de course <span>vocal</span></h2>
+    <p>Push-to-talk sur ton volant Moza, reconnaissance vocale offline, réponse IA et synthèse vocale pour F1&nbsp;25.</p>
+    <div class="hero-actions">
+      <a href="https://github.com/nkz21/f1-voice-engineer" class="btn btn-primary" target="_blank">Voir sur GitHub</a>
+      <a href="#install" class="btn btn-secondary">Installation</a>
+    </div>
+  </section>
+
+  <section class="features">
+    <h2 class="section-title">Fonctionnalités</h2>
+    <p class="section-sub">Tout ce dont tu as besoin pour un vrai ingénieur de course vocal.</p>
+    <div class="features-grid">
+      <div class="feature-card">
+        <div class="feature-icon">🎙️</div>
+        <h3>Push-to-Talk</h3>
+        <p>Appuie sur le bouton Box de ton volant Moza pour parler. Relâche pour obtenir la réponse.</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon">🧠</div>
+        <h3>IA Offline</h3>
+        <p>Reconnaissance vocale 100% locale avec Vosk. Aucune donnée envoyée sur internet.</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon">📡</div>
+        <h3>Télémétrie F1 25</h3>
+        <p>Lecture des données UDP en temps réel : pneus, carburant, gaps, secteurs.</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon">🔊</div>
+        <h3>Réponse Audio</h3>
+        <p>L'IA répond vocalement comme un vrai ingénieur de course via TTS.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="stack">
+    <div class="stack-inner">
+      <h2 class="section-title">Stack technique</h2>
+      <p class="section-sub">Des outils fiables et légers pour une expérience fluide.</p>
+      <div class="stack-grid">
+        <div class="stack-item"><span>🐍</span>Python</div>
+        <div class="stack-item"><span>🎮</span>pygame</div>
+        <div class="stack-item"><span>🎤</span>sounddevice</div>
+        <div class="stack-item"><span>🧠</span>Vosk STT</div>
+        <div class="stack-item"><span>📡</span>UDP F1 25</div>
+        <div class="stack-item"><span>🔊</span>LLM + TTS</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="roadmap" id="install">
+    <h2 class="section-title">Installation rapide</h2>
+    <p class="section-sub">Quelques commandes pour démarrer.</p>
+    <ul>
+      <li class="done">✅ Cloner le repo : <code>git clone https://github.com/nkz21/f1-voice-engineer.git</code></li>
+      <li class="done">✅ Installer les dépendances : <code>pip install -r app/requirements.txt</code></li>
+      <li class="done">✅ Télécharger le modèle Vosk FR et mettre à jour <code>VOSK_MODEL_PATH</code></li>
+      <li class="wip">🔄 Lancer : <code>python app/f1_assistant_vosk_ptt.py</code></li>
+      <li class="todo">⬜ Build Windows .exe via PyInstaller</li>
+    </ul>
+  </section>
+
+  <footer>
+    <p>F1 Voice Engineer &mdash; développé par <a href="https://github.com/nkz21" target="_blank">nkz21</a> &mdash; open source MIT</p>
+  </footer>
+
+</body>
+</html>
