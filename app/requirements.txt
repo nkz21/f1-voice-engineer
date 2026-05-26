@@ -1,0 +1,5 @@
+pygame
+sounddevice
+vosk
+scipy
+numpy
